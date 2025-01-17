@@ -53,7 +53,7 @@ public class AnalyzeRain {
     //TASK #5
     //this method intends to count the number of times it
     //rains daysInRow time; it is almost right. Fix it -- there are two errors
-    //Here are examples of what this task and #6 should return:
+    //Here is an example of what this task and #6 should return:
     // 6 days of rain in a row with and you want to know how many three-day runs there are: 
     //   -- rain, rain, rain, rain, rain, rain --> numRunsOfNeighbors(3) --> should return four(4)
     public int numRunsOfNeighbors(int daysInRow){
@@ -75,6 +75,9 @@ public class AnalyzeRain {
     //WITHOUT processing neighbors and using the 
     //enhanced for loop ==> for(Day d: year)
     //return the number of times in a year that rains
+    //Here is an example of what this task and #5 should return:
+    // 6 days of rain in a row with and you want to know how many three-day runs there are: 
+    //   -- rain, rain, rain, rain, rain, rain --> numRunsOf(3) --> should return four(4)
     //the parameter daysInRow times:
     // numRunsOf(2) --> How many times did it rain 2 days in row?
     // numRunsOf(4) --> How many times did it rain 4 days in row?
