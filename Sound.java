@@ -117,8 +117,12 @@ public class Sound {
     }
   
     //complete this method
+    //if amt = 1.2 -> increase by 20%
     public void amplify (double amt) {
-
+        for(int x = 0; x < myData.size(); x++){
+            myData.set(x, (int)(myData.get(x) * amt));
+        }
+        refresh();
     }
     
     
