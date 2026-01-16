@@ -100,7 +100,6 @@ public class Sound {
     
     public void Normalize(){
         amplify(32000/findMax());
-        refresh();
     }
 
     public int findMax(){
