@@ -4,5 +4,6 @@ public class SoundMain{
         Sound s = new Sound();
         // s.doublePitch();
         //s.reverse();
+        s.addNoise(2000);
     }
 }

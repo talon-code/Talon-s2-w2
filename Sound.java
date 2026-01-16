@@ -98,6 +98,16 @@ public class Sound {
     /// put your Sound transformation methods here
     //////////////////////////////////////////////
     
+    public void addNoise(int n){
+        for(int i = 0; i < myData.size(); i++){
+            if(i % 2 == 0)
+                myData.set(i, myData.get(i) + n);
+            else 
+                myData.set(i, myData.get(i) - n);
+        }
+        refresh();
+    }
+
     public void reverse(){
         for(int i = 0; i < myData.size() / 2; i++)
             swap(i, myData.size() - i - 1);
