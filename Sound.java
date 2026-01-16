@@ -98,6 +98,18 @@ public class Sound {
     /// put your Sound transformation methods here
     //////////////////////////////////////////////
     
+    public void reverse(){
+        for(int i = 0; i <= myData.size() / 2; i++)
+            swap(i, myData.size() - i);
+        refresh();
+    }
+
+    public void swap(int ind1, int ind2){
+        int i1 = myData.get(ind1);
+        myData.set(ind1, myData.get(ind2));
+        myData.set(ind2, i1);
+    }
+
     public void Normalize(){
         amplify(32000/(findMax()*1.0));
     }
