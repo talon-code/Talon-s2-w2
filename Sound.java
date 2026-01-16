@@ -98,6 +98,20 @@ public class Sound {
     /// put your Sound transformation methods here
     //////////////////////////////////////////////
     
+    public void Normalize(){
+        amplify(32000/findMax());
+        refresh();
+    }
+
+    public int findMax(){
+        int highest = 0;
+        for(Integer i: myData){
+            if(Math.abs(i) > highest)
+                highest = Math.abs(i);
+        }
+        return highest;
+    }
+
     public int size() {
         return myData.size();
     }
