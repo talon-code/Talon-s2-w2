@@ -99,8 +99,8 @@ public class Sound {
     //////////////////////////////////////////////
     
     public void reverse(){
-        for(int i = 0; i <= myData.size() / 2; i++)
-            swap(i, myData.size() - i);
+        for(int i = 0; i < myData.size() / 2; i++)
+            swap(i, myData.size() - i - 1);
         refresh();
     }
 
